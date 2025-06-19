@@ -749,6 +749,10 @@ img {
     margin-bottom: 8px;
 }
 
+.modal-field.comment-field {
+    margin-bottom: 16px;
+}
+
 .check-element {
     width: 16px;
     height: 16px;
@@ -776,8 +780,11 @@ img {
     display: block;
 }
 
-.check-text {
+.modal .check-text {
     display: inline-flex;
+}
+
+.check-text {
     align-items: center;
     gap: 8px;
     font-size: 12px;
