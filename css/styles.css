@@ -698,7 +698,7 @@ img {
     height: 40px;
     outline: transparent;
     background-color: transparent;
-    padding-left: 38px;
+    padding: 0 38px;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -744,7 +744,11 @@ img {
     color: rgba(46, 47, 66, 0.4);
 }
 
-.modal-field {
+.modal-field:not(:last-child) {
+    margin-bottom: 8px;
+}
+
+.modal-field:last-child {
     margin-bottom: 16px;
 }
 
@@ -768,6 +772,7 @@ img {
 .modal-check:checked + .check-text .check-element {
     background-color: #404bbf;
     border: none;
+    fill: #f4f4fd;
 }
 
 .modal-check:checked + .check-text .check-element .check-icon {
@@ -798,7 +803,6 @@ img {
     align-items: center;
     justify-content: center;
     gap: 8px;
-    margin-top: 16px;
 }
 
 .submit-btn {
