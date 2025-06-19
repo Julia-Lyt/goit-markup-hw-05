@@ -780,11 +780,8 @@ img {
     display: block;
 }
 
-.modal .check-text {
-    display: inline-flex;
-}
-
 .check-text {
+    display: inline-flex;
     align-items: center;
     gap: 8px;
     font-size: 12px;
@@ -806,6 +803,10 @@ img {
     align-items: center;
     justify-content: center;
     margin-top: 8px;
+}
+
+.modal .check-text {
+    display: inline-flex;
 }
 
 .submit-btn {
