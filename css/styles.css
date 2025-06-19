@@ -616,6 +616,8 @@ img {
     position: absolute;
     top: 50%;
     left: 50%;
+    padding-left: 24px;
+    padding-right: 24px;
     transform: translate(-50%, -50%);
     width: 408px;
     min-height: 584px;
