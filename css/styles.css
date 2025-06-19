@@ -509,6 +509,15 @@ img {
     width: 100%;
 }
 
+.footer-form-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    color: #fff;
+    margin-bottom: 16px;
+}
+
 .footer-form {
     display: flex;
     gap: 24px;
@@ -521,23 +530,21 @@ img {
 }
 
 .footer-input-label {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 150%;
-    letter-spacing: 0.02em;
-    color: #fff;
     display: inline-block;
-    margin-bottom: 16px;
     text-align: left;
 }
 
 .footer-input {
-    min-width: 264px;
-    border: 1px solid #fff;
+    width: 264px;
+    border: 1px solid #ffffff;
     border-radius: 4px;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+    padding-left: 16px;
     height: 40px;
     outline: transparent;
-    padding: 8px 16px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
     background-color: transparent;
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -547,25 +554,23 @@ img {
 }
 
 .footer-input::placeholder {
-    font-size: 12px;
-    line-height: 200%;
-    letter-spacing: 0.04em;
-    color: #fff;
+    color: #ffffff;
 }
 
 .footer-form-btn {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-size: 16px;
-    line-height: 150%;
+    line-height: 1.5;
     letter-spacing: 0.04em;
     text-align: center;
-    color: #fff;
+    color: #ffffff;
     border-radius: 4px;
     padding: 8px 24px;
-    width: 165px;
+    min-width: 165px;
     height: 40px;
     border: none;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
@@ -629,6 +634,7 @@ img {
     position: absolute;
     top: 24px;
     right: 24px;
+    padding: 0;
     width: 24px;
     height: 24px;
     border: 1px solid rgba(0, 0, 0, 0.1);
@@ -637,9 +643,9 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0;
     fill: #2e2f42;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-close-btn:hover, .modal-close-btn:focus {
@@ -653,7 +659,7 @@ img {
 
 .modal-close-btn:hover .modal-close-icon,
 .modal-close-btn:focus .modal-close-icon {
-    fill: #f4f4fd;
+    fill: #ffffff;
 }
 
 .modal-title {
@@ -725,17 +731,16 @@ img {
     height: 120px;
     resize: none;
     padding: 8px 16px;
-}
-
-.modal-textarea {
     font-size: 12px;
-    line-height: 117%;
+    line-height: 1.17;
     letter-spacing: 0.04em;
-    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    color: rgba(46, 47, 66, 0.4);
+    background-color: transparent;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-textarea:focus {
-    border: 1px solid #4d5ae5;
+    border-color: #4D5AE5;
 }
 
 
@@ -765,16 +770,18 @@ img {
     border: none;
 }
 
-.modal-check:checked + .check-text .check-icon {
+.modal-check:checked~.check-text .check-icon {
     display: block;
 }
 
 .check-text {
+    display: flex;
+    align-items: center;
+    gap: 8px;
     font-size: 12px;
-    line-height: 117%;
+    line-height: 1.17;
     letter-spacing: 0.04em;
     color: #8e8f99;
-    padding-top: 16px;
 }
 
 .check-element {
@@ -782,12 +789,10 @@ img {
     height: 16px;
     border-radius: 2px;
     border: 1px solid rgba(46, 47, 66, 0.4);
-    margin-right: 8px;
-    margin-left: 24px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    flex-shrink: 0;
     fill: transparent;
 }
 
@@ -799,18 +804,24 @@ img {
 }
 
 .check-container {
-    margin-top: 16px;
     margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 16px;
 }
 
 .submit-btn {
     display: block;
     margin: 24px auto;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
     font-size: 16px;
-    line-height: 150%;
+    line-height: 1.5;
     letter-spacing: 0.04em;
     text-align: center;
-    color: #fff;
+    color: #ffffff;
     border-radius: 4px;
     border: none;
     padding: 16px 32px;
@@ -820,11 +831,11 @@ img {
     background-color: #4d5ae5;
     cursor: pointer;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
-    
-.submit-btn:hover,
-.submit-btn:focus {
+}
+
+.submit-btn:hover, .submit-btn:focus {
     background-color: #404bbf;
+    border: none;
 }
 
 .submit-btn:focus {
