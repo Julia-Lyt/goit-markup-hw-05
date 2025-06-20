@@ -759,6 +759,8 @@ img {
     border-radius: 2px;
     border: 1px solid rgba(46, 47, 66, 0.4);
     display: inline-flex;
+    vertical-align: middle;
+    margin-right: 8px;
     align-items: center;
     justify-content: center;
     fill: transparent;
@@ -781,7 +783,6 @@ img {
 }
 
 .check-text {
-    display: inline-flex;
     align-items: center;
     gap: 8px;
     font-size: 12px;
@@ -801,12 +802,8 @@ img {
     margin-bottom: 24px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     margin-top: 8px;
-}
-
-.modal .check-text {
-    display: inline-flex;
 }
 
 .submit-btn {
